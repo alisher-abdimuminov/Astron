@@ -1,8 +1,9 @@
 <script setup lang="ts">
-import bugFixingImg from "assets/images/bug_fixing.jpg";
 
-console.log(bugFixingImg);
 
+useHead({
+  title: "Astron"
+});
 </script>
 
 <template>
