@@ -11,17 +11,17 @@ useSeoMeta({
     ogTitle: "Astron",
     ogDescription: "Onlayn repetitor mobil ilovasi",
     ogImage: astron,
-    
+
 })
 
 const users = ref(0);
 
 
 onMounted(async () => {
-    let response = await $fetch("/api/users", {
+    let response = await $fetch<{ users: number }>("/api/users", {
         method: "POST",
     });
-    console.log(response);
+    users.value = response.users;
 });
 </script>
 
@@ -89,5 +89,6 @@ onMounted(async () => {
                 </a>
             </div>
         </div>
+        {{ users }}
     </div>
 </template>
