@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import astron from "~/assets/images/astron.png";
-import bgImage from "~/assets/images/image.png";
-import bgImage2 from "~/assets/images/image2.png";
+import bgImage from "~/assets/images/image2.png";
 
 useHead({
     title: "Astron"
@@ -11,8 +10,8 @@ useSeoMeta({
     ogTitle: "Astron",
     ogDescription: "Onlayn repetitor mobil ilovasi",
     ogImage: astron,
-
-})
+    keywords: "Test, onlayn test, repetitor, onlayn repetitor, savol, savol-javob, milliy sertifikat test, reyting test, mavzulashgan test, attestatsiya test, tarix, huquq, huquqshunoslik, sinf, sinflar."
+});
 
 const users = ref(0);
 
@@ -36,7 +35,7 @@ onMounted(async () => {
         <main class="overflow-auto">
             <div class="my-20 p-2 flex flex-col items-center justify-center gap-10">
                 <div class="flex flex-col items-center text-center gap-10">
-                    <img :src="bgImage2" alt="">
+                    <img :src="bgImage" alt="">
                     <p class="text-black font-bold text-5xl md:text-7xl"> "ASTRON" - onlayn repetitor mobil ilovasining rasmiy sayti </p>
                 </div>
             </div>
