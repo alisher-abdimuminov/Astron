@@ -6,9 +6,10 @@ useHead({
     title: "Astron"
 });
 useSeoMeta({
-    title: "Astron",
-    ogTitle: "Astron",
-    ogDescription: "Onlayn repetitor mobil ilovasi",
+    title: "\"ASTRON\" - onlayn repetitor ",
+    description: "Onlayn testlar va savol javoblar joylangan Telegram ilovasi. Foydalanish qulay, oson va bepul.",
+    ogTitle: "\"ASTRON\" - onlayn repetitor ",
+    ogDescription: "Onlayn repetitor telegram ilovasi",
     ogImage: astron,
     keywords: "Test, onlayn test, repetitor, onlayn repetitor, savol, savol-javob, milliy sertifikat test, reyting test, mavzulashgan test, attestatsiya test, tarix, huquq, huquqshunoslik, sinf, sinflar."
 });
@@ -102,14 +103,12 @@ onMounted(async () => {
         <div class="flex items-center justify-center pb-10 mt-20">
             <div class="flex flex-col items-center text-center gap-10">
                 <p class="text-center text-3xl flex flex-col">
-                    <span>"ASTRON-onlayn repetitor" mobil ilovasini yuklab olish uchun</span>
+                    <span>"ASTRON-onlayn repetitor" ilovasiga ulanish uchun</span>
                     <span>quyidagi tugmaga bosing!!!</span>
                 </p>
-                <a href="https://play.google.com/store/apps/details?id=uz.astrontest&pcampaignid=web_share">
-                    <picture>
-                        <source srcset="https://lh3.googleusercontent.com/zWYJUppfU-TunHSxKMA6i1LRpv2POWaGCOOcvwR2h1E_R8LZ3RCiMUgbyxJDGFQqePR3G5BA3MdpUw4_BtQ_mefV36WH3tnBrV3ZkuSj=e365-pa-nu-w440 2x, https://lh3.googleusercontent.com/zWYJUppfU-TunHSxKMA6i1LRpv2POWaGCOOcvwR2h1E_R8LZ3RCiMUgbyxJDGFQqePR3G5BA3MdpUw4_BtQ_mefV36WH3tnBrV3ZkuSj=e365-pa-nu-w220">
-                        <img src="https://lh3.googleusercontent.com/zWYJUppfU-TunHSxKMA6i1LRpv2POWaGCOOcvwR2h1E_R8LZ3RCiMUgbyxJDGFQqePR3G5BA3MdpUw4_BtQ_mefV36WH3tnBrV3ZkuSj=e365-pa-nu-s0" width="200" height="200" alt="Get it on Google Play" loading="lazy" fetchpriority="auto">
-                    </picture>
+                <a class="flex items-center gap-1" href="https://t.me/astrontest_bot">
+                    <img class="w-6" src="/Logo.png" alt="">
+                    <p class="hover:text-blue-500">@astrontest_bot</p>
                 </a>
             </div>
         </div>
