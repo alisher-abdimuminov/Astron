@@ -37,7 +37,7 @@ onMounted(async () => {
             <div class="my-20 p-2 flex flex-col items-center justify-center gap-10">
                 <div class="flex flex-col items-center text-center gap-10">
                     <img :src="bgImage" alt="">
-                    <p class="text-black font-bold text-5xl md:text-7xl"> "ASTRON" - onlayn repetitor mobil ilovasining rasmiy sayti </p>
+                    <p class="text-black font-bold text-5xl md:text-7xl"> "ASTRON - onlayn repetitor" ilovasining rasmiy sayti </p>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-2 w-full px-10">
@@ -106,9 +106,9 @@ onMounted(async () => {
                     <span>"ASTRON-onlayn repetitor" ilovasiga ulanish uchun</span>
                     <span>quyidagi tugmaga bosing!!!</span>
                 </p>
-                <a class="flex items-center gap-1" href="https://t.me/astrontest_bot">
+                <a class="flex items-center gap-1 border border-blue-500 p-2 rounded-md" href="https://t.me/astrontest_bot">
                     <img class="w-6" src="/Logo.png" alt="">
-                    <p class="hover:text-blue-500">@astrontest_bot</p>
+                    <p class="text-blue-500">@astrontest_bot</p>
                 </a>
             </div>
         </div>
