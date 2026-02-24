@@ -18,7 +18,7 @@ const users = ref(0);
 
 
 onMounted(async () => {
-    let response = await $fetch<{ users: number }>("/api/users", {
+    let response = await $fetch<{ users: number; }>("/api/users", {
         method: "POST",
     });
     users.value = response.users;
@@ -33,85 +33,74 @@ onMounted(async () => {
                 <!-- <p>Astron</p> -->
             </div>
         </header>
-        <main class="overflow-auto">
-            <div class="my-20 p-2 flex flex-col items-center justify-center gap-10">
-                <div class="flex flex-col items-center text-center gap-10">
+        <main class="flex items-center justify-center">
+            <div class="w-full md:w-1/3 flex flex-col gap-5 my-5">
+                <!-- 1 -->
+                <div class="flex flex-col items-center text-center gap-3">
+                    <p class="text-black font-bold md:text-3xl"> Tarix fanidan yangi, mavzulashgan, sifatli
+                        testlar, savol-javoblar va qo'llanmalar joylangan ilovaga ulanish </p>
+                    <svg class="animate-bounce w-20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <rect width="24" height="24" fill="none"></rect>
+                            <path d="M12 6L12 18M12 18L17 13M12 18L7 13" stroke="#000000" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </g>
+                    </svg>
+                    <a class="flex items-center gap-1 border border-blue-500 p-2 rounded-md"
+                        href="https://t.me/astrontest_bot">
+                        <img class="w-6" src="/Logo.png" alt="">
+                        <p class="text-blue-500">@astrontest_bot</p>
+                    </a>
+                </div>
+                <!-- 2 -->
+                <div class="grid gap-2 w-full px-10">
+                    <div class="border rounded-[50px] bg-white h-fit p-10">
+                        <p class="bg-gray-600/10 rounded-full px-2 text-sm w-fit">
+                            Ilovamiz mo'ljallangan
+                        </p>
+                        <ul class="mt-2">
+                            <li>
+                                • Kirish imtixonlariga tayyorlanish uchun;
+                            </li>
+                            <li>
+                                • Olimpiadaga tayyorlanish uchun;
+                            </li>
+                            <li>
+                                • Milliy sertifikatga tayyorlanish uchun;
+                            </li>
+                            <li>
+                                • Attestatsiyaga tayyorlanish uchun.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="border rounded-[50px] bg-white h-fit p-10">
+                        <p class="bg-gray-600/10 rounded-full px-2 text-sm w-fit">Ilovamiz afzalliklari</p>
+                        <ul class="mt-2">
+                            <li>
+                                • Testlar va savollar har doim qo'lingizda, vaqt va joy cheklovlari yo'q;
+                            </li>
+                            <li>
+                                • Yo'l xarajatlari va vaqtni tejash mumkin;
+                            </li>
+                            <li>
+                                • Ob-havo sharoitlari professional ta'lim olishga xalaqit qilmaydi;
+                            </li>
+                            <li>
+                                • Internetdan foydalanish minimal miqdorda megabayt sarflaydi.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="flex items-center justify-center">
                     <img :src="bgImage" alt="">
-                    <p class="text-black font-bold text-5xl md:text-7xl"> "ASTRON - onlayn repetitor" ilovasining rasmiy sayti </p>
-                </div>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-2 w-full px-10">
-                <div class="border rounded-[50px] bg-white h-fit p-10">
-                    <p class="bg-gray-600/10 rounded-full px-2 text-sm w-fit">
-                        Ilovamiz mo'ljallangan
-                    </p>
-                    <ul class="mt-2">
-                        <li>
-                            • Kirish imtixonlariga tayyorlanish uchun;
-                        </li>
-                        <li>
-                            • Olimpiadaga tayyorlanish uchun;
-                        </li>
-                        <li>
-                            • Milliy sertifikatga tayyorlanish uchun;
-                        </li>
-                        <li>
-                            • Attestatsiyaga tayyorlanish uchun.
-                        </li>
-                    </ul>
-                </div>
-                <div class="border rounded-[50px] bg-white h-fit p-10">
-                    <p class="bg-gray-600/10 rounded-full px-2 text-sm w-fit">Bizda mavjud</p>
-                    <ul class="mt-2">
-                        <p>Testlar</p>
-                        <li>
-                            •  Mavzulshtirilgan testlar: har bir mavzu bo'yicha maksimal darajada ma'lumotlar qamrab olingan testlar;
-                        </li>
-                        <li>
-                            • Reyting testlar: har bir darslik bo'yicha aralash tartibda beriladigan 30 talik testlar.
-                        </li>
-                    </ul>
-                    <ul class="mt-2">
-                        <p>Savol-javob</p>
-                        <li>
-                            • Mavzulashtirilgan savollar: har bir mavzu bo'yicha maksimal darajada ma'lumotlar qamrab olingan savollar javoblari bilan;
-                        </li>
-                        <li>
-                            • Reyting savollar: har bir darslik bo'yicha aralash tartibda beriladigan 30 talik savollar-javoblari bilan.
-                        </li>
-                    </ul>
-                </div>
-                <div class="border rounded-[50px] bg-white h-fit p-10">
-                    <p class="bg-gray-600/10 rounded-full px-2 text-sm w-fit">Ilovamiz afzalliklari</p>
-                    <ul class="mt-2">
-                        <li>
-                            • Testlar va savollar har doim qo'lingizda, vaqt va joy cheklovlari yo'q;
-                        </li>
-                        <li>
-                            • Yo'l xarajatlari va vaqtni tejash mumkin;
-                        </li>
-                        <li>
-                            • Ob-havo sharoitlari professional ta'lim olishga xalaqit qilmaydi;
-                        </li>
-                        <li>
-                            • Internetdan foydalanish minimal miqdorda megabayt sarflaydi.
-                        </li>
-                    </ul>
                 </div>
             </div>
         </main>
-        <div class="flex items-center justify-center pb-10 mt-20">
-            <div class="flex flex-col items-center text-center gap-10">
-                <p class="text-center text-3xl flex flex-col">
-                    <span>"ASTRON-onlayn repetitor" ilovasiga ulanish uchun</span>
-                    <span>quyidagi tugmaga bosing!!!</span>
-                </p>
-                <a class="flex items-center gap-1 border border-blue-500 p-2 rounded-md" href="https://t.me/astrontest_bot">
-                    <img class="w-6" src="/Logo.png" alt="">
-                    <p class="text-blue-500">@astrontest_bot</p>
-                </a>
-            </div>
-        </div>
+
         <header class="flex items-center justify-between h-[3rem] border-b border-gray-500/30 py-5 bg-teal-500 px-5">
             <div>
                 <p class="text-white">Kirishlar soni: {{ users }}</p>
