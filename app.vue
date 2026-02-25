@@ -37,8 +37,9 @@ onMounted(async () => {
             <div class="w-full md:w-1/3 flex flex-col gap-5 my-5">
                 <!-- 1 -->
                 <div class="flex flex-col items-center text-center gap-3">
-                    <p class="text-black font-bold md:text-3xl"> Tarix fanidan yangi, mavzulashgan, sifatli
-                        testlar, savol-javoblar va qo'llanmalar joylangan ilovaga ulanish </p>
+                    <p class="text-black font-bold md:text-3xl">
+                        Tarix fanidan mavzulashgan testlar, savol-javoblar, qo'llanmalar joylangan botga ulanish
+                    </p>
                     <svg class="animate-bounce w-20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -86,10 +87,10 @@ onMounted(async () => {
                                 • Yo'l xarajatlari va vaqtni tejash mumkin;
                             </li>
                             <li>
-                                • Ob-havo sharoitlari professional ta'lim olishga xalaqit qilmaydi;
+                                • Ob-havo sharoitlari ta'lim olishga xalaqit qilmaydi;
                             </li>
                             <li>
-                                • Internetdan foydalanish minimal miqdorda megabayt sarflaydi.
+                                • Internet trafikidan tejamkor foydalanadi.
                             </li>
                         </ul>
                     </div>
