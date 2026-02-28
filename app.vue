@@ -38,7 +38,7 @@ onMounted(async () => {
                 <!-- 1 -->
                 <div class="flex flex-col items-center text-center gap-3">
                     <p class="text-black font-bold md:text-3xl">
-                        Tarix fanidan mavzulashgan testlar, savol-javoblar, qo'llanmalar joylangan botga ulanish
+                        Tarix fanidan mavzulashgan testlar, savol-javoblar, qo'llanmalar joylangan ilovaga ulanish
                     </p>
                     <svg class="animate-bounce w-20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -63,7 +63,7 @@ onMounted(async () => {
                         </p>
                         <ul class="mt-2">
                             <li>
-                                • Kirish imtixonlariga tayyorlanish uchun;
+                                • Kirish imtihonlariga tayyorlanish uchun;
                             </li>
                             <li>
                                 • Olimpiadaga tayyorlanish uchun;
